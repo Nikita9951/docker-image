@@ -1,4 +1,4 @@
-FROM ubuntu: 18.04
+FROM ubuntu:18.04
 MAINTAINER nikita gadhave <nikitagadhave000@gmail.com›
 RUN apt update && \
 apt install -y iputils-ping iproute2
