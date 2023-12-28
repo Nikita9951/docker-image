@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER nikita gadhave <nikitagadhave000@gmail.com›
+MAINTAINER nikitas gadhave <nikitagadhave000@gmail.com›
 RUN apt update && \
 apt install -y iputils-ping iproute2
 RUN apt install -y nginx
