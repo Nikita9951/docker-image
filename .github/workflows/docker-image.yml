@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag nikita9951/docker-image-autobuild:latest
+      run: docker build . --file Dockerfile --tag nikita9951/nginx-image-autobuild:latest
     - name: Push the Docker image
-      run: docker login -u nikita9951 -p ${{ secrets.DOCKER_TOKEN }} && docker push nikita9951/docker-image-autobuild:latest
+      run: docker login -u nikita9951 -p ${{ secrets.DOCKER_TOKEN }} && docker push nikita9951/nginx-image-autobuild:latest
