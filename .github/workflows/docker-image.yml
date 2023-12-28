@@ -17,4 +17,4 @@ jobs:
     - name: Build the Nginx image
       run: docker build . --file Dockerfile --tag nikita9951/nginx-image-autobuild:latest
     - name: Push the Nginx image
-      run: docker login -u nikita9951 -P ${{ secrets.DOCKER_TOKEN }} && docker push nikita9951/nginx-image-autobuild:latest
+      run: docker login -u nikita9951 -p ${{ secrets.DOCKER_TOKEN }} && docker push nikita9951/nginx-image-autobuild:latest
